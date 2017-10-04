@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Editor</title>
+	<script type="text/javascript" src="Jquery.js"></script>
+	<script type="text/javascript" src="editor.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+	<script type="text/javascript">
+		$(document).ready(function(){			
+		    $("#txt-editor").loadEditor({ uploadUrl: "http://uat.bibash.com.np/editor/Upload.php" });
+		    $("#txt-editor-2").loadEditor({ buttons: ['strikeThrough', 'subscript', 'superscript', 'undo', 'redo','html','removeFormat' ]});
+		});
+
+
+	</script>
+</head>
+<body>
+
+		<div id="editor-block-1">
+			<textarea id="txt-editor" style="border:1px solid red;">
+				<h1>Welcome</h1>
+				<h3>My own editor</h3>
+			</textarea>
+		</div>
+
+		<div id="editor-block-2" style="clear: both; margin-top: 50px;">
+			<textarea id="txt-editor-2" style="border:1px solid red;">
+				<h1>Welcome</h1>
+				<h3>My own editor</h3>
+			</textarea>
+		</div>
+</body>
+</html>
